@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Jeno Panganiban, Belle Alejandria, Allen Gapuz">
+
+    <title>viaHere - Your next destination is near!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- viaHere Custom CSS -->
+    <link href="../css/viaherestyle.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img class="homeNavLogo" src="../img/logo.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="indexuser.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">Trip</a>
+                      <ul id="user-dp" class="dropdown-menu">
+                        <li><a href="createtrip.html">Create Trip</a></li>
+                        <li><a href="jointrip.html">Join Trip</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">Manage</a>
+                      <ul id="user-dp" class="dropdown-menu">
+                        <li><a href="editcreate.html">Edit Itinerary</a></li>
+                        <li><a href="editjoin.html">Edit Joined Trips</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">Contact Us</a>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Jeno Panganiban<</a>
+                      <ul id="user-dp" class="dropdown-menu">
+                        <li><a href="#">Logout</a></li>
+                      </ul>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <!-- SEARCH -->
+    <header>
+        <<div class="header-content">
+            <div class="header-content-inner">
+                <h1 class="homeHeader">PLAN YOUR NEXT TRIP WITH</h1>
+                <img src="../img/logo.png" width="50%">
+                <p>Your next destination is near.</p>
+            </div>
+            <a href="jointrip.html" class="page-scroll btn btn-xl">Join Trip</a><br>
+            <hr class="hr-primary">
+            <div class="search">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                      <div class="form-section">
+                        <div class="row">
+                            <form id="searchForm" role="form">
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                  <label class="sr-only" for="location">Location</label>
+                                  <input type="email" class="form-control " id="location" placeholder="Where ?">
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="form-group">
+                                  <label class="sr-only" for="checkin">Check in</label>
+                                  <div class="input-group">
+                                    <input type="text" class="form-control form-control-inline" id="checkin" placeholder="Check in">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="form-group">
+                                  <label class="sr-only" for="checkout">Check out</label>
+                                  <div class="input-group">
+                                    <input type="text" class="form-control form-control-inline" id="checkout" placeholder="Check out">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="form-group">
+                                  <label class="sr-only" for="guest">Guest</label>
+                                  <select id="guest" name="guest" class="form-control form-control-inline">
+                                      <option value="1">1 Guest</option>
+                                      <option value="2">2 Guests</option>
+                                      <option value="3">3 Guests</option>
+                                      <option value="4">4 Guests</option>
+                                      <option value="5">5 Guests</option>
+                                      <option value="6">6 Guests</option>
+                                      <option value="7">7 Guests</option>
+                                      <option value="8">8 Guests</option>
+                                      <option value="9">9 Guests</option>
+                                      <option value="10">10 Guests</option>
+                                      <option value="11">11 Guests</option>
+                                      <option value="12">12 Guests</option>
+                                      <option value="13">13 Guests</option>
+                                      <option value="14">14 Guests</option>
+                                      <option value="15">15 Guests</option>
+                                      <option value="16">16+ Guests</option>
+                                  </select>
+                                </div>
+                              </div>
+                                
+                                <a id="searchBtn" type="submit" class="btn btn-default btn-primary searchButton" href="displaytrips.html">Search</a>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                        <br>
+                        <hr class="hr-primary">
+                        <a href="createtrip.html" class="page-scroll btn btn-xl">Create Trip</a>
+                          
+            </div>
+
+         </div>
+
+       
+    </header>
+
+    
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <!-- easing -->
+    <script src="../js/easing.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- viaHere Custom JavaScript -->
+    <script src="../js/viaherescript.js"></script>
+
+
+</body>
+</html>

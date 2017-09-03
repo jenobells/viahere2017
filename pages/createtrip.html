@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Jeno Panganiban, Belle Alejandria, Allen Gapuz">
+
+    <title>viaHere - Your next destination is near!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- viaHere Custom CSS -->
+    <link href="../css/viaherestyle.css" rel="stylesheet">
+    <link href="../css/createtripstyle.css" rel="stylesheet">
+    <link href="../css/datepicker.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" class="BGcreateTrip">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img class="homeNavLogo" src="../img/logo.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="indexuser.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">Trip</a>
+                      <ul id="user-dp" class="dropdown-menu">
+                        <li><a href="../pages/createtrip.html">Create Trip</a></li>
+                        <li><a href="../pages/jointrip.html">Join Trip</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">Manage</a>
+                      <ul id="user-dp" class="dropdown-menu">
+                        <li><a href="#">Edit Itinerary</a></li>
+                        <li><a href="#">Edit Joined Trips</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
+                      <ul id="user-dp" class="dropdown-menu">
+                        <li><a href="#">Logout</a></li>
+                      </ul>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <!-- SEARCH -->
+    <header>
+        <div class="header-content">
+            <!--<div class="header-content-inner">
+                <h1 class="createTrip">PLAN YOUR TRIP</h1>
+            </div>-->
+            
+            <div class="container" id="BGtab">
+                <div class="row">
+                    <div class="board">
+                        <ul class="nav nav-tabs">
+                            <div class="liner"></div>
+                            <li rel-index="0" class="active">
+                                <a href="#step-1" class="btn" aria-controls="step-1" role="tab" data-toggle="tab">
+                                    <span><i class="glyphicon glyphicon-road"></i></span>
+                                </a>
+                            </li>
+                            <li rel-index="1">
+                                <a href="#step-2" class="btn disabled" aria-controls="step-2" role="tab" data-toggle="tab">
+                                    <span><i class="glyphicon glyphicon-plus"></i></span>
+                                </a>
+                            </li>
+                            <li rel-index="2">
+                                <a href="#step-3" class="btn disabled" aria-controls="step-3" role="tab" data-toggle="tab">
+                                    <span><i class="glyphicon glyphicon-home"></i></span>
+                                </a>
+                            </li>
+                            <li rel-index="3">
+                                <a href="#step-4" class="btn disabled" aria-controls="step-4" role="tab" data-toggle="tab">
+                                    <span><i class="glyphicon glyphicon-euro"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="step-1">
+
+                            <div class="col-md-12">
+                                <h3>Destination</h3>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">From</label>
+                                        <input  maxlength="100" type="text" required="required" class="form-control" placeholder="From"  />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">To</label>
+                                        <input  maxlength="10" type="text" required="required" class="form-control" placeholder="To"  />
+                                    </div>
+                                </div>
+                                <h3>Travel Date</h3>
+                                <div class="col-md-4 col-centered">
+                                    <div class="form-group">
+                                        <label class="control-label">Start</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-inline" id="checkin" placeholder="Start">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-centered">
+                                    <div class="form-group">
+                                        <label class="control-label">End</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-inline" id="checkout" placeholder="End">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <button id="step-1-next" class="btn btn-lg btn-primary nextBtn pull-right" >Next</button>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="step-2">
+                            <div class="col-md-12">
+                                <h3>Via</h3>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="subject">Mode of Transportation</label>
+                                        <select id="subject" name="subject" class="form-control" required="required">
+                                            <option value="na" selected="">Choose One:</option>
+                                            <option value="product">Public Transportation</option>
+                                            <option value="suggestions">Private Vehicle</option>
+                                            <option value="service">Plane</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="subject">Number of Expected Travellers</label>
+                                      <select id="guest" name="guest" class="form-control form-control-inline">
+                                          <option value="1">1 Guest</option>
+                                          <option value="2">2 Guests</option>
+                                          <option value="3">3 Guests</option>
+                                          <option value="4">4 Guests</option>
+                                          <option value="5">5 Guests</option>
+                                          <option value="6">6 Guests</option>
+                                          <option value="7">7 Guests</option>
+                                          <option value="8">8 Guests</option>
+                                          <option value="9">9 Guests</option>
+                                          <option value="10">10 Guests</option>
+                                          <option value="11">11 Guests</option>
+                                          <option value="12">12 Guests</option>
+                                          <option value="13">13 Guests</option>
+                                          <option value="14">14 Guests</option>
+                                          <option value="15">15 Guests</option>
+                                          <option value="16">16+ Guests</option>
+                                      </select>
+                                    </div>
+                              </div>
+                                
+                                
+                                <button id="step-2-next" class="btn btn-lg btn-primary nextBtn pull-right">Next</button>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="step-3">
+                            <div class="col-md-12">
+                                <h3>Accomodation (optional)</h3>
+                                <button id="step-3-next" class="btn btn-lg btn-primary nextBtn pull-right">Next</button>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="step-4">
+                            <div class="col-md-12">
+                                <h3>Breakdown of Expenses</h3>
+                                <button id="step-4-next" class="btn btn-lg btn-primary pull-right">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <!-- easing -->
+    <script src="../js/easing.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- viaHere Custom JavaScript -->
+    <script src="../js/viaherescript.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script src="../js/datepicker.js"></script> 
+    <script src="../js/createtripscript.js"></script> 
+
+
+</body>
+</html>

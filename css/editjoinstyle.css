@@ -1,0 +1,11 @@
+tbody > tr {
+    cursor: pointer;
+}
+
+.result{
+    margin-top:20px;
+}
+
+.modalColor{
+    color: black;
+}
