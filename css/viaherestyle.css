@@ -154,6 +154,10 @@ header {
   text-align: center;
   color: white;
 }
+
+.maynoba-header{
+    background-image: url('../img/maynoba/header.jpg');
+}
 header .header-content{
   position: relative;
   text-align: center;
