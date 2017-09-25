@@ -156,7 +156,7 @@ header {
 }
 
 .maynoba-header{
-    background-image: url('../img/maynoba/header.jpg');
+    background-image: url('../img/batolusong/bg.jpg');
 }
 header .header-content{
   position: relative;
@@ -485,6 +485,10 @@ header .header-content .header-content-inner p {
 
 #about{
     background-color: #18121E;
+}
+
+#bring{
+    background-color: #233237;
 }
 .section-heading {
   margin-top: 0;
